@@ -1,0 +1,12 @@
+<form action='/add' method='get'>
+    <input id='product' name='product' type='text'>
+    <input type='submit' value='add to cart'>
+</form>
+<%# <%= session[:cart] %> 
+<ul>
+    <% cart.each do |item| %>
+        <li>
+            <%= item %>
+        </li>
+    <% end %>
+</ul>
